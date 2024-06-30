@@ -27,7 +27,7 @@ func RegisterRouter() *gin.Engine {
 		})
 	})
 
-	prefixGroup := os.Getenv("PREFIX")
+	prefixGroup := "/hf"
 	if prefixGroup != "" {
 		prefixRouter := router.Group(prefixGroup)
 		{
